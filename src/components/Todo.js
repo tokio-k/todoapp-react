@@ -8,7 +8,7 @@ export default class Todo extends React.Component {
     render() {
         console.log(this.props);
 
-        const list = this.props.todo.todoList.map((todo, index) => <li key={index}>{todo}</li>)
+        const list = this.props.todo.todoList.map((todo, index) => <li key={index}>{todo}<button onClick={() => this.props.deleteTodo(index)}>削除</button></li>)
 
         return (
             <div>
