@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import createStore from './reducks/store/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
 
+export const store = createStore();
+
 ReactDOM.render(
-  <Provider >
+  <Provider store= { store }>
     <App />
   </Provider>,
   document.getElementById('root')
