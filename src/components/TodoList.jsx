@@ -1,9 +1,9 @@
 import React from "react";
 import { Todo } from "./index";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const TodoList = () => {
-  const todoList = useSelector((state) => state.todoList);
+  const todoList = useSelector((state) => state.todoList.todoList);
 
   return (
     <div>
