@@ -1,10 +1,13 @@
 import React from "react";
+import { Todo } from "./index";
 
 const TodoList = (props) => {
   return (
-    <List>
-      <Todo title={props.title} />
-    </List>
+    <div>
+      <Todo title={"aaa"} />
+      <Todo title={"bbb"} />
+      <Todo title={"ccc"} />
+    </div>
   );
 };
 
