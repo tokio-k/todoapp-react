@@ -7,7 +7,7 @@ export const addTodoAction = (todoState) => {
             title: todoState.title,
             isFinish:false,
             detail: todoState.detail,
-            timeLimit :todoState.timeLimit
+            timeLimit: todoState.timeLimit
         }
     }
 }

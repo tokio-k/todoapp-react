@@ -1,11 +1,13 @@
 const initialState = {
-    todos: {
-        id:"",
-        title:"",
-        isFinish:false,
-        detail:"",
-        timeLimit:""
-    }
+    todoList: [
+        {
+            id:"1",
+            title:"aaa",
+            isFinish:false,
+            detail:"a",
+            timeLimit:"11"
+        },
+    ],
 }
 
 export default initialState;

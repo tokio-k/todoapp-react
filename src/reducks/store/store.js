@@ -3,12 +3,12 @@ import {
     combineReducers,
 } from 'redux';
 
-import { TodosReducer } from '../todos/reducers';
+import { TodoListReducer } from '../todos/reducers';
 
 export default function createStore() {
     return reduxCreateStore(
         combineReducers({
-            todos: TodosReducer
+            todoList: TodoListReducer
         })
     )
 }
