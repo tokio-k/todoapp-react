@@ -3,7 +3,7 @@ const initialState = {
         {
             id:'0000',
             title:"initialState",
-            isFinish:false
+            isComplete:false
         },
     ],
 }

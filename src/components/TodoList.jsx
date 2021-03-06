@@ -9,9 +9,32 @@ const TodoList = () => {
   console.log(todoList);
   return (
     <div>
-      {todoList.map((todo, index) => {
-        return <Todo title={todo.title} key={index.toString()} id={todo.id} />;
-      })}
+      <h2>タスク一覧</h2>
+      {todoList
+        .filter((todo) => todo.isComplete === false)
+        .map((todo, index) => {
+          return (
+            <Todo
+              title={todo.title}
+              key={index.toString()}
+              id={todo.id}
+              isComplete={false}
+            />
+          );
+        })}
+      <h3>完了済み</h3>
+      {todoList
+        .filter((todo) => todo.isComplete === true)
+        .map((todo, index) => {
+          return (
+            <Todo
+              title={todo.title}
+              key={index.toString()}
+              id={todo.id}
+              isComplete={true}
+            />
+          );
+        })}
     </div>
   );
 };
