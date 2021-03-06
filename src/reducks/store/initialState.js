@@ -1,7 +1,8 @@
 const initialState = {
     todoList: [
         {
-            title:"",
+            id:'0000',
+            title:"initialState",
             isFinish:false
         },
     ],
