@@ -4,13 +4,13 @@ import initialState from '../store/initialState';
 export const TodoListReducer = (state = initialState, action) => {
     switch (action.type) {
         case Actions.ADD_TODO:
-            console.log('console.log(initialState); with reducers')
-            console.log(initialState);
-            console.log('console.log(state);with reducers')
-            console.log(state);
             return {
                 todoList: [...state.todoList,action.payload]
             };
+        case Actions.DELETE_TODO:
+            return {
+                todoList: state.todoList.filter((todo) => todo.id !== action.payload.id)
+            }
         default:
             return state
     }
