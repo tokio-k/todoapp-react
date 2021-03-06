@@ -20,7 +20,7 @@ const App = () => {
       <input value={title} type={"text"} rows={1} onChange={inputTitle} />
       <button
         onClick={() => {
-          dispatch(addTodoAction({ title: title, isFinish: false }));
+          dispatch(addTodoAction({ title: title, isComplete: false }));
         }}
       >
         追加
